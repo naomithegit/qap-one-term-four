@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ToDoListTest {
 
-    private ToDoList toDoList;
+    private ToDoList toDoList = new ToDoList();
 
     @BeforeEach
     public void setUp() {
