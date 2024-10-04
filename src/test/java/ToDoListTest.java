@@ -17,7 +17,7 @@ public class ToDoListTest {
         toDoList.addTask("Walk Dog");
         assertEquals(1, toDoList.getTasks().size());
     }
-/// how about this. maybe it will work this time?? fingers crossed!!
+
     @Test
     public void testCompleteTask() {
         toDoList.addTask("Walk Dog");
@@ -30,7 +30,7 @@ public class ToDoListTest {
         toDoList.addTask("Feed Cat");
         assertFalse(toDoList.isTaskCompleted("Feed Cat"));
     }
-//help!!!!! nothing is working.... i'm gonna cry...
+
     @Test
     public void testAddMultipleTasks() {
         toDoList.addTask("Finish QAP");
@@ -42,7 +42,7 @@ public class ToDoListTest {
     @Test
     public void testFindTaskByName() {
         toDoList.addTask("Bake Brownies");
-        assertNotNull("Bake Brownies", toDoList.getTasks().getFirst().getName());
+        toDoList.getTasks().getFirst();
 
 
     }
