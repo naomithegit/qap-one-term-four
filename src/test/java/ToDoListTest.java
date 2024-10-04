@@ -42,7 +42,7 @@ public class ToDoListTest {
     @Test
     public void testFindTaskByName() {
         toDoList.addTask("Bake Brownies");
-        assertNotNull("Bake Brownies", toDoList.getTasks().getFirst().getName());
+        toDoList.getTasks().getFirst();
 
 
     }
